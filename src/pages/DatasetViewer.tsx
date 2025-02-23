@@ -82,6 +82,7 @@ const DatasetViewer = () => {
               <ArrowLeft className="w-4 h-4" />
               Back to Collections
             </Button>
+            <div className="flex gap-2">
             <Button 
               variant="default"
               onClick={navigateToDashboard}
@@ -99,6 +100,16 @@ const DatasetViewer = () => {
                 </>
               )}
             </Button>
+            {/* another button called share this experience */}
+            <Button 
+              variant="default"
+              className="bg-slate-400 flex items-center gap-2"
+              onClick={() => toast.info('Share this experience with your friends!')}
+            >
+              <Share2 className="w-4 h-4" />
+              Share this experience
+              </Button>
+            </div>
           </div>
 
           <div className="flex gap-2 mb-6 justify-center">

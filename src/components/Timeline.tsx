@@ -67,18 +67,29 @@ const timelineEvents = [
   {
     date: "January 1987",
     title: "AIDS Crisis at BU",
-    description: "",
+    description: "Skyrocketing rates of HIV/AIDS infections in the Boston area led to acrisis of increasing awareness.",
     longDescription: "Skyrocketing rates of HIV/AIDS infections in the Boston area led to a crisis at Boston University. The university responded by establishing a task force to address the crisis and provide support to students and staff.",
     thinkAboutIt: "How has the AIDS crisis impacted the Boston University community?", 
     color: "emerald"
   },
   {
-    date: "March 1987",
-    title: "death of a student",
-    description: "",
-    longDescription: "The death of a student from AIDS-related complications brought the crisis to the forefront of the university's attention. The student's family and friends organized a memorial service to honor his life and raise awareness about the disease.",
-    thinkAboutIt: "How did the death of a student impact the BU community?",
+    date: "February 2 1987",
+    title: "A critical article published arguing against awareness",
+    description: "Amidst the rise in AIDS related deaths, a controversial article was published in the student newspaper.",
+    longDescription: " The article argued against raising awareness about the AIDS crisis, claiming that it infringed on personal freedoms and was unnecessary. The article sparked a heated debate on campus and led to increased activism in support of AIDS awareness.",
+    thinkAboutIt: "How would this event impact the culture of activism at Boston University?",
     color: "blue"
+  },
+  // it appeared to be a dual sided thing, on the 19th, an article was published in support of awareness
+  {
+    "date": "February 19 1987",
+    "title": "An article arguing for awareness",
+    "description": "A response not neceessarily direct, to the previous article was published in the student newspaper.",
+    "longDescription": "The article stood against the previous one, and actively raised awareness about the AIDS crisis. It called for the university to take action and provide support to those affected by the crisis. It also suggested specific steps that affected individuals could take to protect themselves and others.",
+    "thinkAboutIt": "How did this article contribute to the ongoing conversation about AIDS awareness on campus?",
+    "color": "emerald"
+
+
   }
   // Add more events as needed
 ];

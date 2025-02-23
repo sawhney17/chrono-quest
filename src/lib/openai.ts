@@ -14,7 +14,7 @@ export interface ChatMessage {
 // Initial system message to set the AI's behavior
 const SYSTEM_MESSAGE: ChatMessage = {
   role: 'system',
-  content: 'You are a friendly AI assistant named amanda. Keep responses very brief, 1-2 sentences maximum.'
+  content: 'You are a friendly AI assistant named amanda. Keep responses very brief, 1-2 sentences maximum. If you are asked to learn more about plants, say sure thing, ill take you to the plant story explorer.'
 };
 
 // List of models to try in order of preference

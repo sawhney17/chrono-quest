@@ -7,51 +7,39 @@ import MultipleChoiceQuiz from "@/components/MultipleChoiceQuiz";
 const questions = [
   {
     id: 1,
-    question: "What was the first step in our project's journey?",
+    question: "Which event marked the beginning of Boston University's response to the AIDS crisis?",
     options: [
-      "Launching the product",
-      "Running beta tests",
-      "Creating the initial concept",
-      "Completing the design phase"
+      "AIDS Crisis at BU",
+      "A critical article published arguing against awareness",
+      "An article arguing for awareness",
+      "None of the above"
     ],
-    correctAnswer: 2,
-    explanation: "We started with creating the initial concept and vision for the project in January 2024, which laid the foundation for all subsequent development phases."
+    correctAnswer: 0,
+    explanation: "In January 1987, skyrocketing HIV/AIDS rates in the Boston area led BU to form a task force, marking the start of its response to the crisis."
   },
   {
     id: 2,
-    question: "What feedback did we receive during the product launch?",
+    question: "What was the effect of the controversial article published on February 2, 1987?",
     options: [
-      "Mixed reactions",
-      "Overwhelming positive feedback",
-      "Negative feedback",
-      "No feedback"
+      "It led to increased activism for AIDS awareness",
+      "It resolved the crisis immediately",
+      "It was ignored by the BU community",
+      "It diminished the urgency of the issue"
     ],
-    correctAnswer: 1,
-    explanation: "The product launch in April 2024 was met with overwhelming positive feedback from users, validating our development approach and design decisions."
+    correctAnswer: 0,
+    explanation: "Despite its critical tone, the article sparked heated debates on campus and ultimately spurred increased activism in support of AIDS awareness."
   },
   {
     id: 3,
-    question: "What did we do during the beta testing phase?",
+    question: "Which event directly countered the earlier critical article?",
     options: [
-      "Launched the product",
-      "Created the initial concept",
-      "Completed the design",
-      "Gathered valuable insights from select users"
-    ],
-    correctAnswer: 3,
-    explanation: "During the beta testing phase in March 2024, we worked with a select group of users to gather valuable insights that helped improve the product before launch."
-  },
-  {
-    id: 4,
-    question: "What was incorporated into the design phase?",
-    options: [
-      "Only developer preferences",
-      "No external input",
-      "User feedback",
-      "Random changes"
+      "AIDS Crisis at BU",
+      "A critical article published arguing against awareness",
+      "An article arguing for awareness",
+      "A follow-up editorial on personal freedoms"
     ],
     correctAnswer: 2,
-    explanation: "In the design phase (February 2024), we actively incorporated user feedback to enhance the interface and improve the overall user experience."
+    explanation: "On February 19, 1987, a supportive article was published that directly responded to the earlier piece by advocating for increased awareness and action."
   }
 ];
 

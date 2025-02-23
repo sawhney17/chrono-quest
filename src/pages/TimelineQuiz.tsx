@@ -61,33 +61,27 @@ const TimelineQuizPage = () => {
           </div>
 
           <HorizontalTimeline 
-            events={[
-              {
-                id: "4",
-                date: "January 2024",
-                title: "Initial Concept",
-                description: "Started the journey with our initial concept and vision for the project.",
-              },
-              {
-                id: "3",
-                date: "February 2024",
-                title: "Design Phase",
-                description: "Completed the final design phase, incorporating user feedback and enhancing the interface.",
-              },
-              {
-                id: "2",
-                date: "March 2024",
-                title: "Beta Testing",
-                description: "Conducted extensive beta testing with a select group of users, gathering valuable insights.",
-              },
-              {
-                id: "1",
-                date: "April 2024",
-                title: "Project Launch",
-                description: "Successfully launched our flagship product to the market with overwhelming positive feedback.",
-              }
-            ]}
-          />
+  events={[
+    {
+      id: "1",
+      date: "January 1987",
+      title: "AIDS Crisis at BU",
+      description: "BU responded to the rising HIV/AIDS crisis by forming a task force and increasing awareness.",
+    },
+    {
+      id: "2",
+      date: "February 2, 1987",
+      title: "A Critical Article Published",
+      description: "A controversial article was published in the student newspaper arguing against AIDS awareness.",
+    },
+    {
+      id: "3",
+      date: "February 19, 1987",
+      title: "A Response Article Published",
+      description: "A counter-article was published advocating for awareness and action in response to the AIDS crisis.",
+    }
+  ]}
+/>
         </motion.div>
       </div>
     </div>

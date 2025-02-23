@@ -8,12 +8,13 @@ import { useSpeechRecognition } from '@/hooks/useSpeechRecognition';
 import { useChatState } from '@/hooks/useChatState';
 import { useVideoGeneration } from '@/hooks/useVideoGeneration';
 import { useNavigate } from 'react-router-dom';
+import { set } from 'date-fns';
 
 const VideoChat = () => {
   const navigate = useNavigate();
   const { isRecording, startRecording, stopRecording, currentTranscription } = useSpeechRecognition();
   const { sendMessage, isProcessing } = useChatState();
-  const { videoUrl, isGenerating, error: videoError, generateVideoFromText } = useVideoGeneration();
+  const {videoUrl, isGenerating, error: videoError, generateVideoFromText } = useVideoGeneration();
   const [aiResponse, setAiResponse] = useState<string>('');
 
   const handleToggleRecording = useCallback(async () => {
@@ -33,6 +34,12 @@ const VideoChat = () => {
               setAiResponse(response);
               await generateVideoFromText(response);
               toast.success('Generating video response');
+              if (currentTranscription.toLowerCase().includes('plant')) {
+                toast.success("You've unlocked the Plant Story Explorer!");
+                setTimeout(() => {
+                  navigate('/dataset/herbarias');
+                }, 30000);
+              }
             } else {
               toast.error('No response received from AI');
             }
@@ -41,6 +48,26 @@ const VideoChat = () => {
             toast.error(`Failed to get AI response: ${error.message}`);
           }
         } else {
+          try {
+            console.log('Sending transcription to OpenAI:', currentTranscription);
+            const response = await sendMessage("I woudl like to learn about plants");
+            if (response) {
+              setAiResponse(response);
+              await generateVideoFromText(response);
+              toast.success('Generating video response');
+              if (currentTranscription.toLowerCase().includes('plant')) {
+                toast.success("You've unlocked the Plant Story Explorer!");
+                setTimeout(() => {
+                  navigate('/dataset/herbarias');
+                }, 10000);
+              }
+            } else {
+              toast.error('No response received from AI');
+            }
+          } catch (error: any) {
+            console.error('Error in handleToggleRecording:', error);
+            toast.error(`Failed to get AI response: ${error.message}`);
+          }
           toast.warning('No speech detected');
         }
         toast.info('Recording stopped');

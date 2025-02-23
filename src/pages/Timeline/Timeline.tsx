@@ -51,7 +51,7 @@ const TimelinePage = () => {
               transition={{ delay: 0.4 }}
               className="mx-auto mt-3 max-w-md text-base text-gray-600 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl"
             >
-              Follow our journey as we build something amazing together.
+              Watch us build something amazing together
             </motion.p>
           </div>
           <Timeline/>
